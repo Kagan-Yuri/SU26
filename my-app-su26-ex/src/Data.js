@@ -1,0 +1,147 @@
+export const movies = [
+  {
+    id: 1,
+    title: "The Matrix",
+    duration: 136,
+    director: "Wachowski Sisters",
+    rating: 8.7,
+  },
+  {
+    id: 2,
+    title: "Inception",
+    duration: 148,
+    director: "Christopher Nolan",
+    rating: 8.8,
+  },
+  {
+    id: 3,
+    title: "The Godfather",
+    duration: 180,
+    director: "Francis Ford Coppola",
+    rating: 8.5,
+  },
+];
+
+export const books = [
+  {
+    id: 1,
+    title: "Clean Code",
+    author: "Robert C. Martin",
+    category: "Programming",
+    availableCopies: 3,
+    totalCopies: 5,
+    rating: 4.8,
+    image: "images/41SH-SvWPxL._SY445_SX342_.jpg",
+  },
+  {
+    id: 2,
+    title: "The Pragmatic Programmer",
+    author: "Andrew Hunt",
+    category: "Programming",
+    availableCopies: 1,
+    totalCopies: 3,
+    rating: 4.6,
+    image: "images/ShowCover.jfif",
+  },
+  {
+    id: 3,
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    category: "Psychology",
+    availableCopies: 2,
+    totalCopies: 2,
+    rating: 4.7,
+    image: "images/9781846146701.jpg",
+  },
+  {
+    id: 4,
+    title: "Design Patterns: OOP Software",
+    author: "Erich Gamma",
+    category: "Software Engineering",
+    availableCopies: 4,
+    totalCopies: 6,
+    rating: 4.5,
+    image: "images/81IGFC6oFmL.jpg",
+  },
+  {
+    id: 5,
+    title: "Introduction to Algorithms",
+    author: "Thomas H. Cormen",
+    category: "Algorithms",
+    availableCopies: 2,
+    totalCopies: 5,
+    rating: 4.3,
+    image: "images/510-kxVoGFL.jpg",
+  },
+  {
+    id: 6,
+    title: "Design of Existing Code",
+    author: "Martin Fowler",
+    category: "Programming",
+    availableCopies: 5,
+    totalCopies: 5,
+    rating: 4.9,
+    image: "images/R.jfif",
+  },
+];
+
+export const items = [
+  {
+    name: "To Hai Ha",
+    gender: true,
+    image: "images/book1.png",
+  },
+  {
+    name: "Vu Nam Anh",
+    gender: true,
+    image: "images/book2.png",
+  },
+  {
+    name: "Lai thi teo",
+    gender: false,
+    image: "images/book3.png",
+  },
+];
+
+export const students = [
+  {
+    id: "S001",
+    name: "Nguyen Van A",
+    email: "a@example.com",
+    gender: "Male",
+    dob: "10/10/2000",
+    class: "Fall 2025 - DB Systems (A)",
+  },
+  {
+    id: "S002",
+    name: "Tran Thi B",
+    email: "b@example.com",
+    gender: "Female",
+    dob: "21/9/2001",
+    class: "Fall 2025 - DB Systems (A)",
+  },
+  {
+    id: "S003",
+    name: "Le van C",
+    email: "c@example.com",
+    gender: "Male",
+    dob: "12/7/2002",
+    class: "Fall 2025 - DB Systems (A)",
+  },
+  {
+    id: "S004",
+    name: "Lai Thi D",
+    email: "d@example.com",
+    gender: "Female",
+    dob: "23/8/2001",
+    class: "Fall 2025 - Operating Systems",
+  },
+  {
+    id: "S005",
+    name: "Bui Lan E",
+    email: "e@example.com",
+    gender: "Female",
+    dob: "18/4/2001",
+    class: "Fall 2025 - Operating Systems",
+  },
+];
