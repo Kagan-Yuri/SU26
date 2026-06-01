@@ -11,7 +11,7 @@ function UseEffect() {
  })
 
  useEffect(() => {
-    if (countB > 0) {
+    if (countB >= 2) {
       setName({ name: 'Anh Tuan', family: 'Ha' });
     }
   }, [countB]);
