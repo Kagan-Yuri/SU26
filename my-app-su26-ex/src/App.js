@@ -20,7 +20,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import { items } from './Data';
 import StudentTable from "./components/StudentTable";
 import StudentRegisterForm from "./components/StudentRegisterForm";
-// import UseEffect from './components/UseEffect';
+import UseEffect from './components/UseEffect';
 
 function App() {
   return (
@@ -32,7 +32,7 @@ function App() {
       {/* <Paging /> */}
       {/* { items?.map((t) => (<Avatar name={t.name} gender={t.gender} image={t.image} />)) } */}
       <StudentTable />
-      {/* <UseEffect /> */}
+      <UseEffect />
       <Books />
       <StudentRegisterForm/>
     </div>
