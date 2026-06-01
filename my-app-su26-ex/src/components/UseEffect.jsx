@@ -5,26 +5,21 @@ function UseEffect() {
  const [countA,setCountA ] =  useState(0);
  const [countB,setCountB ] =  useState(0);
  const [name,setName] = useState({name:'tu', family: 'no'})
-//DDooir owr counter A
-useEffect(() =>{
-    setName({name:'Anh Tuan',family: 'Ha'})
-});
 
  useEffect(() =>{
     console.log('No dependency array');
  })
 
  useEffect(() => {
-    console.log("Count B Changed: ", countB);
- }, [countB]);
+    if (countB > 0) {
+      setName({ name: 'Anh Tuan', family: 'Ha' });
+    }
+  }, [countB]);
 
   useEffect(() => {
     console.log('Array Empty');
  }, []);
 
-useEffect(() =>{
-    setName({name:'Anh ',family: 'Hi'})
-});
 
  useEffect(() => {
 console.log('co tham so countA')
