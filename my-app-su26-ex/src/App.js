@@ -19,6 +19,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Avatar from './components/Avatar';
 // import { items } from './Data';
 import StudentTable from "./components/StudentTable";
+import StudentRegisterForm from "./components/StudentRegisterForm";
 // import UseEffect from './components/UseEffect';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <StudentTable />
       {/* <UseEffect /> */}
       <Books />
+      <StudentRegisterForm/>
     </div>
   );
 }
