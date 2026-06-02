@@ -5,7 +5,7 @@ import React from "react";
 // import { Container } from 'react-bootstrap';
 // import Header from './components/Header';
 // import Movies from './components/Movies';
-import Books from "./components/Books";
+// import Books from "./components/Books";
 import "bootstrap/dist/css/bootstrap.min.css";
 // Import các component bài tập đã làm ở bước trước
 // import Tab_S17 from './components/Tab_S17';
@@ -18,9 +18,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Paging from "./components/Paging";
 // import Avatar from './components/Avatar';
 // import { items } from './Data';
-import StudentTable from "./components/StudentTable";
-import StudentRegisterForm from "./components/StudentRegisterForm";
+// import StudentTable from "./components/StudentTable";
+// import StudentRegisterForm from "./components/StudentRegisterForm";
 // import UseEffect from './components/UseEffect';
+import Director from "./Lab/Director";
+import Star from "./Lab/Star"
+import Movies from "./Lab/Movies"
 
 function App() {
   return (
@@ -30,10 +33,16 @@ function App() {
       <UseProp/>
       <Hello who="Alice" age={30} /> */}
       {/* { items?.map((t) => (<Avatar name={t.name} gender={t.gender} image={t.image} />)) } */}
-      <StudentTable />
       {/* <UseEffect /> */}
+      {/* <StudentTable />
       <Books />
-      <StudentRegisterForm/>
+      <StudentRegisterForm /> */}
+      <hr/>
+      <Director/>
+      <hr/>
+      <Star/>
+      <hr/>
+      <Movies/>
     </div>
   );
 }
