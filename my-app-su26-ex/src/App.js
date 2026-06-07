@@ -1,12 +1,14 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-// import Home from './components/Home';
-// import Gallery from './components/Gallery';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import Home from './components/Home';
+import Gallery from './components/Gallery';
 // import SideBarAndTable from './components/SideBarAndTable';
 // import { Container } from 'react-bootstrap';
 // import Header from './components/Header';
-// import Movies from './components/Movies';
-// import Books from "./components/Books";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Movies from './components/Movies';
+import Books from "./components/Books";
 // Import các component bài tập đã làm ở bước trước
 // import Tab_S17 from './components/Tab_S17';
 // import Modal_S20 from './components/Modal_S20';
@@ -18,16 +20,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Paging from "./components/Paging";
 // import Avatar from './components/Avatar';
 // import { items } from './Data';
-// import StudentTable from "./components/StudentTable";
+import StudentTable from "./components/StudentTable";
 // import StudentRegisterForm from "./components/StudentRegisterForm";
 // import UseEffect from './components/UseEffect';
-import Director from "./Lab/Director";
-import Star from "./Lab/Star"
-import Movies from "./Lab/Movies"
+import UseParamBookImg from "./components/UseParamBookImg";
+// import UseRefHookEx from './components/UseRefHookEx'
+// import Lab1 from "./Lab/Lab1";
+import HeaderRouter from "./components/HeaderRouter";
+import UseParamMovieId from "./components/UseParamMovieId";
 
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Container>
+        <HeaderRouter />
+        <Routes>
+          <Route path='/home' element={<Movies/>}></Route>
+          <Route path='/getview' element={<StudentTable/>}></Route>
+          <Route path='/pictures' element={<Gallery />}></Route>
+          <Route path='/about' element={<Home />}></Route>
+          <Route path='/view-showtime/:id' element={<UseParamMovieId />}></Route>
+          <Route path='/help' element={<Books />}></Route>
+          <Route path='/view-book/:id' element={<UseParamBookImg />}></Route>
+        </Routes>
+      </Container>
       {/* 
       <UseProp width="200px" height="100px" color="#fedede" title="My Box" />
       <UseProp/>
@@ -37,13 +53,14 @@ function App() {
       {/* <StudentTable />
       <Books />
       <StudentRegisterForm /> */}
-      <hr/>
+      {/* <hr/>
       <Director/>
       <hr/>
       <Star/>
       <hr/>
-      <Movies/>
-    </div>
+      <Movies/> */}
+      {/* <UseRefHookEx /> */}
+    </BrowserRouter>
   );
 }
 
